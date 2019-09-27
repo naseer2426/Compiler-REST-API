@@ -1,0 +1,11 @@
+h2 {
+    text-align: center;
+}
+
+#myForm {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 20%;
+    width: 75%;
+}

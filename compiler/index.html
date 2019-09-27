@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./bootstrap.min.css" />
+        <link rel="stylesheet" href="./myCss.css" />
+    </head>
+    <body>
+        <h2>Online Compiler</h2>
+        <div class="form-wrapper">
+            <form
+                action="/compile"
+                method="post"
+                enctype="multipart/form-data"
+                id="myForm"
+            >
+                <div class="form-group">
+                    <label for="entrypoint">Enter entry point</label>
+                    <input type="text" name="entrypoint" class="form-control" />
+                </div>
+
+                <div class="form-group">
+                    <label for="input_text">Enter stdin</label>
+                    <textarea
+                        type="text"
+                        name="input_text"
+                        class="form-control"
+                    ></textarea
+                    ><br />
+                </div>
+
+                <div class="form-group">
+                    <label for="language">Choose Language</label>
+                    <select name="language" class="form-control">
+                        <option value="python">Python</option>
+                        <option value="C">C</option>
+                        <option value="C++">C++</option>
+                        <option value="java">Java</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="Zipfile">Upload Zip File</label>
+                    <input
+                        type="file"
+                        name="myCode"
+                        class="form-control-file"
+                    />
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>
