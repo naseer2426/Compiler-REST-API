@@ -2,7 +2,7 @@
 
 ## What is this?
 
-This API can compile and run code with stdin and send a response with stdout. It can compiler java, C, C++ and python. Try it out [here](http://compiler-env.i3hveummcp.ap-southeast-1.elasticbeanstalk.com/)
+This API can compile and run code with stdin and send a response with stdout. It can compiler java, C, C++ and python. Try it out [here](http://compiler-env.i3hveummcp.ap-southeast-1.elasticbeanstalk.com/). <b>Do note that this is not active since I ran out of Amazon credits.<b>
 
 #### Demo Page
 
@@ -60,20 +60,20 @@ Next you will need to write JavaScript to make the API call.
 
 ```javascript
 function handle() {
-    var myForm = document.getElementById("myForm");
-    var formData = new FormData(myForm);
-    var url =
-        "http://compiler-env.i3hveummcp.ap-southeast-1.elasticbeanstalk.com/";
-    var options = {
-        method: "POST",
-        body: formData
-    };
-    fetch(url, options)
-        .then(res => res.json())
-        .then(json => {
-            console.log(json);
-            //Do whatever you want with this JSON response
-        });
+  var myForm = document.getElementById("myForm");
+  var formData = new FormData(myForm);
+  var url =
+    "http://compiler-env.i3hveummcp.ap-southeast-1.elasticbeanstalk.com/";
+  var options = {
+    method: "POST",
+    body: formData
+  };
+  fetch(url, options)
+    .then(res => res.json())
+    .then(json => {
+      console.log(json);
+      //Do whatever you want with this JSON response
+    });
 }
 ```
 
