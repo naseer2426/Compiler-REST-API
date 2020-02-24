@@ -2,7 +2,7 @@
 
 ## What is this?
 
-This API can compile and run code with stdin and send a response with stdout. It can compiler java, C, C++ and python. Try it out [here](http://compiler-env.i3hveummcp.ap-southeast-1.elasticbeanstalk.com/). <b>Do note that this is not active since I ran out of Amazon credits.<b>
+This API can compile and run code with stdin and send a response with stdout. It can compiler java, C, C++ and python. Try it out [here](https://naseer-compiler-api.herokuapp.com/). 
 
 #### Demo Page
 
