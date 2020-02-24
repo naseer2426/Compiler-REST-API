@@ -6,7 +6,7 @@ var multer = require("multer");
 var cors = require("cors")({ origin: true });
 // console.log(process.cwd());
 var upload = multer({ dest: "uploads/" });
-const port = 80;
+var port = process.env.PORT || 80;
 const unzipper = require("unzipper");
 app.use(cors);
 app.use(express.static(__dirname + "/"));

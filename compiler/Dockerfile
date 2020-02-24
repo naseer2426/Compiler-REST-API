@@ -8,6 +8,7 @@ EXPOSE 80
 
 RUN npm init -y
 RUN npm install --save child_process express multer unzipper cors
+RUN apt-get update
 RUN apt-get --assume-yes install valgrind
 
 CMD ["node","app.js"]
